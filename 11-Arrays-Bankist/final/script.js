@@ -76,9 +76,8 @@ const displayMovements = function (movements, sort = false) {
 
     const html = `
       <div class="movements__row">
-        <div class="movements__type movements__type--${type}">${
-      i + 1
-    } ${type}</div>
+        <div class="movements__type movements__type--${type}">${i + 1
+      } ${type}</div>
         <div class="movements__value">${mov}€</div>
       </div>
     `;
@@ -151,9 +150,8 @@ btnLogin.addEventListener('click', function (e) {
 
   if (currentAccount?.pin === Number(inputLoginPin.value)) {
     // Display UI and message
-    labelWelcome.textContent = `Welcome back, ${
-      currentAccount.owner.split(' ')[0]
-    }`;
+    labelWelcome.textContent = `Welcome back, ${currentAccount.owner.split(' ')[0]
+      }`;
     containerApp.style.opacity = 100;
 
     // Clear input fields
@@ -326,7 +324,7 @@ currenciesUnique.forEach(function (value, _, map) {
 ///////////////////////////////////////
 // Coding Challenge #1
 
-/* 
+/*
 Julia and Kate are doing a study on dogs. So each of them asked 5 dog owners about their dog's age, and stored the data into an array (one array for each). For now, they are just interested in knowing whether a dog is an adult or a puppy. A dog is an adult if it is at least 3 years old, and it's a puppy if it's less than 3 years old.
 
 Create a function 'checkDogs', which accepts 2 arrays of dog's ages ('dogsJulia' and 'dogsKate'), and does the following things:
@@ -434,7 +432,7 @@ console.log(max);
 ///////////////////////////////////////
 // Coding Challenge #2
 
-/* 
+/*
 Let's go back to Julia and Kate's study about dogs. This time, they want to convert dog ages to human ages and calculate the average age of the dogs in their study.
 
 Create a function 'calcAverageHumanAge', which accepts an arrays of dog's ages ('ages'), and does the following things in order:
@@ -493,7 +491,7 @@ console.log(totalDepositsUSD);
 ///////////////////////////////////////
 // Coding Challenge #3
 
-/* 
+/*
 Rewrite the 'calcAverageHumanAge' function from the previous challenge, but this time as an arrow function, and using chaining!
 
 TEST DATA 1: [5, 2, 4, 1, 15, 8, 3]
@@ -657,7 +655,7 @@ console.log(bankDepositSum);
 const numDeposits1000 = accounts
   .flatMap(acc => acc.movements)
   .reduce((count, cur) => (cur >= 1000 ? ++count : count), 0);
-  
+
 console.log(numDeposits1000);
 
 // Prefixed ++ operator
@@ -676,7 +674,7 @@ const { deposits, withdrawals } = accounts
     },
     { deposits: 0, withdrawals: 0 }
   );
-  
+
 console.log(deposits, withdrawals);
 
 // 4.
@@ -703,7 +701,7 @@ console.log(convertTitleCase('and here is another title with an EXAMPLE'));
 ///////////////////////////////////////
 // Coding Challenge #4
 
-/* 
+/*
 Julia and Kate are still studying dogs, and this time they are studying if dogs are eating too much or too little.
 Eating too much means the dog's current food portion is larger than the recommended portion, and eating too little is the opposite.
 Eating an okay amount means the dog's current food portion is within a range 10% above and 10% below the recommended portion (see hint).
